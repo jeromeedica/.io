@@ -1,0 +1,203 @@
+/* colors
+ #ED1C5B; light 
+ #E20E4E; dark
+*/
+
+/* reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    background: rgb(12, 11, 11);
+   
+    
+}
+
+
+h1{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'PT Serif', serif;
+}
+
+
+/* Sidebar start here  */
+.sidebar{
+    position: fixed;
+    background: rgba(5, 5, 5, 0.5);
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sidebar ul{
+    
+    background: rgba(255, 255, 255, 1);
+    padding-bottom: 0;
+    display: flex;
+    
+
+    
+}
+
+.sidebar ul li {
+    background: rgb(219, 196, 200);
+    list-style: none;
+    border: 0px solid #fd417a;
+   
+}
+
+
+.sidebar ul li img{
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 0px;
+    padding: 5px 9px;
+    border: 0px solid red;
+
+
+}
+.sidebar ul li:hover{
+    background: #ff6598;
+    transition: all ease-in 0.5s;
+}
+
+
+
+
+
+
+.head-tag {
+    
+    color: #ff6598;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(231, 229, 225);
+    width: 240px;
+    position: relative;
+    top: 68px;
+    margin: auto;
+}
+
+.carousel{
+    height: auto;
+    margin-top: 100px;
+    border: 0px solid red;
+    position: relative;
+   
+    
+}
+
+
+.carousel-cell{
+    height: 60vh;
+    width: 800px;
+    background: grey;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.carousel-cell img{
+    height:  30vh;
+    width: 38%;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0  00px #fff;
+    background: rgb(196, 71, 71);
+    border-radius: 28px;
+}
+
+.carousel-cell a{
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    font-size: 18px;
+    background: #ff6598;;
+    color: white;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow:  0 0 4px black;
+    transition: all ease-in 0.5s;
+  
+}
+
+.carousel-cell a:hover{
+    background: rgb(48, 44, 44);;
+    color: pink;
+}
+
+
+
+.project-header{
+  
+    background: none;
+    color: white;
+    height: auto;
+    width: 100%;
+    max-width: 80%;
+    text-align: justify;
+    margin: 70px auto;
+    display: none;
+  
+}
+
+.project-header p{
+   font-size: 15px;
+   padding: 3.5px 11px;
+}
+
+
+.space{
+    
+    height: 6vh;
+    width: 100%;
+}
+@media screen and (max-width: 644px){
+    
+    .project-header{
+  
+        background: none;
+        color: white;
+        height: auto;
+        width: 100%;
+        max-width: 98%;
+        text-align: justify;
+        margin: 50px auto;
+      
+    }
+
+    .carousel-cell img{
+        height:  20vh;
+        width: 21%;
+        background-size: cover;
+        background-position: center center;
+        box-shadow: 0 0  00px #fff;
+        background: rgb(196, 71, 71);
+        border-radius: 28px;
+    }
+}
